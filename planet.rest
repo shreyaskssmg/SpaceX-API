@@ -1,0 +1,39 @@
+
+###
+GET http://localhost:5000/stars
+
+
+
+###
+GET  http://localhost:5000/stars/Sun
+
+
+
+
+###
+
+POST http://localhost:5000/stars/
+Content-Type: application/json
+
+{
+    "title" : "Sun",
+    "short_description" : "The closest planet to the sun.",
+    "description" : "Mercury is the closest planet to the sun and the smallest planet in the solar system — it is only a little larger than earth's moon. Mercury zips around the sun in only 88 days and because it is so close to our star (about two-fifths the distance between earth and the sun).Mercury experiences dramatic changes in its day and night temperatures. Mercury temperatures can reach a scorching 840 f (450 c) in the day, which is hot enough to melt lead. Meanwhile, on the night side, temperatures drop to minus 290 f (minus 180 c).",
+    "image_url" : "https://res.cloudinary.com/djhstgxgk/image/upload/v1680620418/SpaceX/Mercury_yohche.png",
+    "wiki_url" : "https://en.wikipedia.org/wiki/Mercury_(planet)"
+    
+
+}
+
+###
+
+DELETE http://localhost:5000/stars/Earth
+
+###
+PATCH http://localhost:5000/stars/Sun
+Content-Type: application/json
+
+{
+    "title" : "Earth"
+}
+
